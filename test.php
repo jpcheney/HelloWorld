@@ -17,7 +17,7 @@ $device->updateStream('load_1m');
 $device->updateStream('load_5m');
 $device->updateStream('load_15m');
 
-while (true) {
+//while (true) {
   list($load_1m, $load_5m, $load_15m) = sys_getloadavg();
   $now = date('c');
 
@@ -26,9 +26,9 @@ while (true) {
     'load_5m'  => array(array('value' => $load_5m,  'timestamp' => $now)),
     'load_15m' => array(array('value' => $load_15m, 'timestamp' => $now))
   );
-  echo "load_1m."values['load_1m']."\n"
-  echo "load_5m."values['load_5m']."\n"
-  echo "load_15m."values['load_15m']."\n"
+  echo "load_1m.value=".$values['load_1m'][0]['value']." load_1m.timestamp=".$values['load_1m'][0]['timestamp']."\n";  
+  echo "load_5m.value=".$values['load_5m'][0]['value']." load_5m.timestamp=".$values['load_5m'][0]['timestamp']."\n";
+  echo "load_15m.value=".$values['load_15m'][0]['value']." load_15m.timestamp=".$values['load_15m'][0]['timestamp']."\n";
 
   try {
     $device->postUpdates($values);
@@ -39,5 +39,5 @@ while (true) {
   }
 
   sleep(10);
-}
+//}
 ?>

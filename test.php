@@ -39,15 +39,15 @@ echo "test32<br/>";
   echo "load_5m.value=".$values['load_5m'][0]['value']." load_5m.timestamp=".$values['load_5m'][0]['timestamp']."\n<br/>";
   echo "load_15m.value=".$values['load_15m'][0]['value']." load_15m.timestamp=".$values['load_15m'][0]['timestamp']."\n<br/>";
 
-  try{
+  //try{
 	  $device->stream('load_1m')->postValues(array(array('value' => $load_1m,  'timestamp' => $now)));
 	  //$device->stream('load_5m')->postValues(array(array('value' => $load_5m,  'timestamp' => $now)));
 	  //$device->stream('load_15m')->postValues(array(array('value' => $load_15m,  'timestamp' => $now)));
-	} catch(M2XException $ex) {
+	/*} catch(M2XException $ex) {
     echo 'Error: ' . $ex->getMessage();
     echo $ex->response->raw;
     break;
-  }
+  }*/
   /*try {
     $device->postUpdates($values);
   } catch (M2XException $ex) {

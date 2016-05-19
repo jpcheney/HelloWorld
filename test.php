@@ -5,8 +5,8 @@ use Att\M2X\M2X;
 use Att\M2X\Error\M2XException;
 
 echo "getenv(\"M2X_API_KEY\")=".getenv("M2X_API_KEY");
-//$apiKey   = getenv("M2X_API_KEY");
-$apiKey = "587f7006234b4059d15de39c98dd7a4a";
+$apiKey   = getenv("M2X_API_KEY");
+//$apiKey = "587f7006234b4059d15de39c98dd7a4a";
 $deviceId = '434b72300bad423cbaa295f7db30404c';
 echo "test1";
 $m2x = new M2X($apiKey);

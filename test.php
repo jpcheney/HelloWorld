@@ -25,7 +25,7 @@ $device->updateStream('load_5m');
 $device->updateStream('load_15m');
 
 echo "test3<br/>";
-/*
+
 //while (true) {
   list($load_1m, $load_5m, $load_15m) = sys_getloadavg();
   $now = date('c');
@@ -46,7 +46,7 @@ echo "test3<br/>";
     echo $ex->response->raw;
     break;
   }
-*/
+
 //  sleep(10);
 //}
 ?>

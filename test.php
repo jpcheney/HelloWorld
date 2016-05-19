@@ -25,6 +25,9 @@ while (true) {
     'load_5m'  => array(array('value' => $load_5m,  'timestamp' => $now)),
     'load_15m' => array(array('value' => $load_15m, 'timestamp' => $now))
   );
+  echo "load_1m."values['load_1m']."\n"
+  echo "load_5m."values['load_5m']."\n"
+  echo "load_15m."values['load_15m']."\n"
 
   try {
     $device->postUpdates($values);

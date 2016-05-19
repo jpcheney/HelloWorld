@@ -1,4 +1,6 @@
 <?php
+echo "test";
+/*
 use Att\M2X\M2X;
 use Att\M2X\Error\M2XException;
 
@@ -36,7 +38,7 @@ $device->updateStream('load_15m');
     echo $ex->response->raw;
     break;
   }
-
-  sleep(10);
+*/
+//  sleep(10);
 //}
 ?>

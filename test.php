@@ -9,7 +9,7 @@ $apiKey = "587f7006234b4059d15de39c98dd7a4a";
 $deviceId = '434b72300bad423cbaa295f7db30404c';
 
 $m2x = new M2X($apiKey);
-/*
+
 # Get the device
 $device = $m2x->device($deviceId);
 
@@ -18,6 +18,8 @@ $device->updateStream('load_1m');
 $device->updateStream('load_5m');
 $device->updateStream('load_15m');
 
+echo "test1";
+/*
 //while (true) {
   list($load_1m, $load_5m, $load_15m) = sys_getloadavg();
   $now = date('c');

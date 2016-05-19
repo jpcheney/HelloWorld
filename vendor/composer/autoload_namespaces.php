@@ -6,4 +6,5 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'Att\\M2X' => array($baseDir . '/app/vendor/attm2x/m2x-php/src'),
 );

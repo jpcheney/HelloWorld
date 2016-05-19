@@ -1,3 +1,4 @@
+<?php
 use Att\M2X\M2X;
 use Att\M2X\Error\M2XException;
 
@@ -35,3 +36,4 @@ while (true) {
 
   sleep(10);
 }
+?>

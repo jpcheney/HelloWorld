@@ -3,13 +3,13 @@ echo "test";
 
 use Att\M2X\M2X;
 use Att\M2X\Error\M2XException;
-/*
+
 //$apiKey   = getenv("M2X_API_KEY");
 $apiKey = "587f7006234b4059d15de39c98dd7a4a";
-$deviceId = 'fe1ee628c3549e9de86d7101d9c5317f';
+$deviceId = '434b72300bad423cbaa295f7db30404c';
 
 $m2x = new M2X($apiKey);
-
+/*
 # Get the device
 $device = $m2x->device($deviceId);
 

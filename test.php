@@ -11,16 +11,16 @@ $apiKey   = getenv("M2X_API_KEY");
 $deviceId = '434b72300bad423cbaa295f7db30404c';
 echo "test1."<br/>"";
 $m2x = new M2X($apiKey);
-echo "test1";
+echo "test1<br/>";
 # Get the device
 $device = $m2x->device($deviceId);
-echo "test2."<br/>"";
+echo "test2<br/>";
 # Create the streams if they don't exist yet
 $device->updateStream('load_1m');
 $device->updateStream('load_5m');
 $device->updateStream('load_15m');
 
-echo "test3."<br/>"";
+echo "test3<br/>";
 /*
 //while (true) {
   list($load_1m, $load_5m, $load_15m) = sys_getloadavg();

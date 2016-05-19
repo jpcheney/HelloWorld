@@ -9,7 +9,7 @@ echo "getenv(\"M2X_URL\")=".getenv("M2X_URL")."<br/>";
 $apiKey = getenv("M2X_API_KEY");
 //$apiKey = "587f7006234b4059d15de39c98dd7a4a";
 $deviceId = '434b72300bad423cbaa295f7db30404c';
-echo "test111<br/>";
+echo "test1<br/>";
 
 
 $m2x = new M2X($apiKey);

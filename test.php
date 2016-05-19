@@ -41,7 +41,7 @@ echo "test32<br/>";
 
   //try{
 	  $device->stream('load_1m')->postValues(array(array('value' => $load_1m,  'timestamp' => $now)));
-	  //$device->stream('load_5m')->postValues(array(array('value' => $load_5m,  'timestamp' => $now)));
+	  $device->stream('load_5m')->postValues(array(array('value' => $load_5m,  'timestamp' => $now)));
 	  //$device->stream('load_15m')->postValues(array(array('value' => $load_15m,  'timestamp' => $now)));
 	/*} catch(M2XException $ex) {
     echo 'Error: ' . $ex->getMessage();

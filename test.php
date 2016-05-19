@@ -1,25 +1,26 @@
 <?php
-echo "test";
+echo "test."<br/>"";
 
 use Att\M2X\M2X;
 use Att\M2X\Error\M2XException;
 
-echo "getenv(\"M2X_API_KEY\")=".getenv("M2X_API_KEY");
+echo "getenv(\"M2X_API_KEY\")=".getenv("M2X_API_KEY")."<br/>";
+echo "getenv(\"M2X_URL\")=".getenv("M2X_URL")."<br/>";
 $apiKey   = getenv("M2X_API_KEY");
 //$apiKey = "587f7006234b4059d15de39c98dd7a4a";
 $deviceId = '434b72300bad423cbaa295f7db30404c';
-echo "test1";
+echo "test1."<br/>"";
 $m2x = new M2X($apiKey);
 echo "test1";
 # Get the device
 $device = $m2x->device($deviceId);
-echo "test2";
+echo "test2."<br/>"";
 # Create the streams if they don't exist yet
 $device->updateStream('load_1m');
 $device->updateStream('load_5m');
 $device->updateStream('load_15m');
 
-echo "test3";
+echo "test3."<br/>"";
 /*
 //while (true) {
   list($load_1m, $load_5m, $load_15m) = sys_getloadavg();

@@ -1,0 +1,5 @@
+{
+  "require": {
+    "attm2x/m2x-php": "~3.0"
+  }
+}

@@ -1,5 +1,5 @@
 <?php
-echo "test."<br/>"";
+echo "test<br/>";
 
 use Att\M2X\M2X;
 use Att\M2X\Error\M2XException;

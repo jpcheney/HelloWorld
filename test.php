@@ -3,7 +3,7 @@ use Att\M2X\Error\M2XException;
 
 //$apiKey   = getenv("M2X_API_KEY");
 $apiKey = "aa554d2899305c234358af041ba9366b";
-$deviceId = 'test';
+$deviceId = 'fe1ee628c3549e9de86d7101d9c5317f';
 
 $m2x = new M2X($apiKey);
 

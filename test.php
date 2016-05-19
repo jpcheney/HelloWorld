@@ -24,7 +24,7 @@ $device->updateStream('load_1m');
 $device->updateStream('load_5m');
 $device->updateStream('load_15m');
 
-echo "test33<br/>";
+echo "test32<br/>";
 
 //while (true) {
   list($load_1m, $load_5m, $load_15m) = sys_getloadavg();
@@ -40,6 +40,8 @@ echo "test33<br/>";
   echo "load_15m.value=".$values['load_15m'][0]['value']." load_15m.timestamp=".$values['load_15m'][0]['timestamp']."\n<br/>";
 
   $device->stream('load_1m')->postValues(array(array('value' => $load_1m,  'timestamp' => $now)));
+  $device->stream('load_5m')->postValues(array(array('value' => $load_5m,  'timestamp' => $now)));
+  $device->stream('load_15m')->postValues(array(array('value' => $load_15m,  'timestamp' => $now)));
   /*try {
     $device->postUpdates($values);
   } catch (M2XException $ex) {

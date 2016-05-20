@@ -2,11 +2,11 @@ Test
 
 <?php
 	$values = "GET<br/>";
-	foreach($_GET as $ket => $getValues){
+	foreach($_GET as $key => $getValues){
 		$values = $values . $key ."=" . $getValues . "<br/>";
 	}
 	$values = $values . "POST<br/>";
-	foreach($_POST as $ket => $getValues){
+	foreach($_POST as $key => $getValues){
 		$values = $values . $key ."=" . $getValues . "<br/>";
 	}
 	

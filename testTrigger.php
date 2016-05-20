@@ -13,6 +13,8 @@ Test<br/>
 			$values = $values . $key ."=" . $getValues . "<br/>\n";
 		}
 	}
+	$postdata = file_get_contents("php://input");
+	$values = $values . $postdata . "<br/>\n";
 	$retour = file_put_contents("test.txt",$values,FILE_APPEND);
 	//echo $retour."</BR>";
 	

@@ -1,7 +1,7 @@
 Test
 
 <?php
-	$values = $_SERVER['REQUEST_METHOD']."<br/>GET<br/>";
+	$values = "method=". $_SERVER['REQUEST_METHOD']."<br/>GET<br/>";
 	if(count($_GET)>0){
 		foreach($_GET as $key => $getValues){
 			$values = $values . $key ."=" . $getValues . "<br/>";
@@ -13,8 +13,8 @@ Test
 			$values = $values . $key ."=" . $getValues . "<br/>";
 		}
 	}
-	$retour = file_put_contents("test.txt",$values);
-	echo $retour."</BR>";
+	$retour = file_put_contents("test.txt",$values,FILE_APPEND);
+	//echo $retour."</BR>";
 	
 	echo file_get_contents("test.txt");
 ?>

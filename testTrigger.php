@@ -13,7 +13,7 @@ Test
 			$values = $values . $key ."=" . $getValues . "<br/>";
 		}
 	}
-	$retour = file_put_contents("test.txt",);
+	$retour = file_put_contents("test.txt",$values);
 	echo $retour."</BR>";
 	
 	echo file_get_contents("test.txt");

@@ -1,7 +1,7 @@
 Test
 
 <?php
-	$values = "GET<br/>";
+	$values = $_SERVER['REQUEST_METHOD']."<br/>GET<br/>";
 	if(count($_GET)>0){
 		foreach($_GET as $key => $getValues){
 			$values = $values . $key ."=" . $getValues . "<br/>";
